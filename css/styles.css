@@ -4,6 +4,25 @@ body {
     background-color: #FFFFFF;
 }
 
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style-type: none;
 }
@@ -12,8 +31,58 @@ body {
     text-decoration: none;
 }
 
-.button {
-    cursor: pointer;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%); 
+    clip: rect (0 0 0 0);
+    overflow: hidden;
+}
+
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    margin-right: auto;
+    display: flex;
+    column-gap: 110px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 40px;
+    list-style-type: none;
+}
+
+.menu .menu-item {
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
 }
 
 .logo {
@@ -24,6 +93,10 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
 }
 
 .text-logo {
@@ -36,12 +109,20 @@ body {
     color: #2E2F42;
 }
 
+.menu-item {
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
 .menu-link {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42;
 }
 
@@ -55,13 +136,9 @@ body {
 }
 
 .link-contact {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-style: normal;
-    color: #434455;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .link-contact:hover,
@@ -70,28 +147,42 @@ body {
 }
 
 .service {
-    background: #2E2F42;
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .solution {
-    font-family: 'Roboto', sans-serif;
+    color: #FFF;
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFF;
+    line-height: 1.07;
     text-align: center;
-    background: #2E2F42;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
-    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background: #4D5AE5;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
     letter-spacing: 0.04em;
+    line-height: 1.5;
     color: #FFF;
-    background: #4D5AE5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 48px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .button:hover,
@@ -102,6 +193,22 @@ body {
 
 .benefits {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+.list-benefits {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list-benefits .menu-item {
+    margin-right: 24px;
 }
 
 .benefit {
@@ -111,6 +218,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .benefit-info {
@@ -124,6 +232,9 @@ body {
 
 .our-team {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
 }
 
 .team {
@@ -135,10 +246,33 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.list-team {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 24px;
 }
 
 .menu-item {
     background-color: #FFFFFF;
+    width: calc((100% - 3*24px)/4);
+}
+
+.menu-item-team {
+    background-color: #FFFFFF;
+    width: calc((100% - 3*24px)/4);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: 24px;
 }
 
 .member-one {
@@ -179,7 +313,9 @@ body {
 
 .portfolio {
     background: #FFF;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .topic {
@@ -191,6 +327,26 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.portfolios {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.container-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+
 }
 
 .theme {
@@ -200,12 +356,12 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .topic-service {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -236,7 +392,21 @@ body {
 }
 
 .fin {
-    background: #2E2F42;
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo-link-footer {
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .fin-logo {
@@ -251,10 +421,8 @@ body {
 }
 
 .fin-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #F4F4FD;
+    letter-spacing: 0.02em;
+    display: flex;
+    width: 264px;
 }
