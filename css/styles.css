@@ -2,6 +2,9 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
 }
 
 button {
@@ -51,8 +54,7 @@ img {
 
 .container {
     max-width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -110,20 +112,15 @@ img {
 }
 
 .menu-item {
-    margin-right: 40px;
-    box-sizing: border-box;
+    width: calc((100% - 3*24px)/4);
 }
 
 .menu-link {
     display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: #2E2F42;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-    color: #2E2F42;
 }
 
 .menu-link:hover,
@@ -192,10 +189,8 @@ img {
 }
 
 .benefits {
-    background: #FFF;
     padding-top: 120px;
     padding-bottom: 120px;
-    box-sizing: border-box;
 }
 
 .list-benefits {
@@ -212,12 +207,11 @@ img {
 }
 
 .benefit {
-    font-family: 'Roboto', sans-serif;
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    line-height: 1.2;
     margin-bottom: 8px;
 }
 
@@ -234,7 +228,6 @@ img {
     background: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
-    box-sizing: border-box;
 }
 
 .team {
@@ -257,22 +250,27 @@ img {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 24px;
 }
 
 .menu-item {
     background-color: #FFFFFF;
-    width: calc((100% - 3*24px)/4);
+    width: calc((100% - 48px) / 3);
 }
 
 .menu-item-team {
     background-color: #FFFFFF;
-    width: calc((100% - 3*24px)/4);
+    width: calc((100% - 48px) / 3);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     margin-right: 24px;
+}
+
+.team-container-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #FFF;
 }
 
 .member-one {
@@ -299,6 +297,7 @@ img {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .post {
